@@ -424,6 +424,135 @@ st.markdown(
         text-align: justify;
     }
 
+
+    /* --------------------------------------------------
+       ADAPTATION POUR TÉLÉPHONE
+    -------------------------------------------------- */
+
+    @media screen and (max-width: 600px) {
+
+        /* Réduit les marges générales de la page */
+        .block-container {
+            padding-left: 14px;
+            padding-right: 14px;
+            padding-top: 16px;
+            padding-bottom: 24px;
+        }
+
+        /* Titre principal plus compact */
+        .titre-principal {
+            font-size: 29px;
+            line-height: 1.25;
+            margin-top: 8px;
+            margin-bottom: 18px;
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+
+        /* Consigne adaptée à la largeur du téléphone */
+        .consigne {
+            width: 100%;
+            max-width: 100%;
+            padding: 18px 15px;
+            font-size: 17px;
+            line-height: 1.5;
+            border-radius: 18px;
+            box-sizing: border-box;
+            text-align: left;
+            text-align-last: left;
+            overflow-wrap: anywhere;
+        }
+
+        .consigne-titre {
+            font-size: 23px;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        /* Carte de question */
+        .question-card {
+            width: 100%;
+            max-width: 100%;
+            padding: 18px 14px;
+            font-size: 18px;
+            line-height: 1.4;
+            border-radius: 18px;
+            box-sizing: border-box;
+            overflow-wrap: anywhere;
+            word-break: normal;
+        }
+
+        /* Compteur */
+        .compteur {
+            font-size: 16px;
+            margin-top: 8px;
+        }
+
+        /* Propositions */
+        div[role="radiogroup"] {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 11px 9px;
+            border-radius: 16px;
+        }
+
+        div[role="radiogroup"] label {
+            font-size: 15px;
+            line-height: 1.35;
+            padding: 7px 2px;
+            align-items: flex-start;
+        }
+
+        div[role="radiogroup"] p {
+            white-space: normal;
+            overflow-wrap: anywhere;
+            word-break: normal;
+        }
+
+        /* Boutons suffisamment grands pour le tactile */
+        .stButton > button {
+            font-size: 16px;
+            padding: 10px 12px;
+            border-radius: 18px;
+            min-height: 48px;
+        }
+
+        /* Carte d’explication */
+        .explication-card {
+            width: 100%;
+            max-width: 100%;
+            padding: 17px 14px;
+            font-size: 16px;
+            line-height: 1.5;
+            border-radius: 18px;
+            box-sizing: border-box;
+            text-align: left;
+            overflow-wrap: anywhere;
+            word-break: normal;
+        }
+
+        /* Score final */
+        .score-final {
+            width: 100%;
+            max-width: 100%;
+            padding: 22px 14px;
+            font-size: 24px;
+            border-radius: 18px;
+            box-sizing: border-box;
+        }
+
+        .etoiles {
+            font-size: 22px;
+            margin-top: 14px;
+        }
+
+        /* Messages Streamlit */
+        div[data-testid="stAlert"] {
+            font-size: 15px;
+            line-height: 1.4;
+        }
+    }
+
     </style>
     """,
     unsafe_allow_html=True
